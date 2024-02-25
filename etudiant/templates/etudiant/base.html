@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+{%load static%}
+
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion Étudiant</title>
+    <link rel="stylesheet" href="{% static 'etudiant/css/bootstrap.css' %}" >
+</head>
+<body style="background-color : #161616">
+
+    <div class="container mt-5">
+        <h2 class="text-center alert "> GESTION D'ÉTUDIANTS</h2>
+        {% block content %}{% endblock content %}
+    </div>
+
+
+    
+    <script src="{% static 'etudiant/js/bootstrap.js' %}" ></script>
+    <script src="{% static 'etudiant/js/jquery.js' %}" ></script>
+    <script src="{% static 'etudiant/js/popper.js' %}" ></script>
+    
+
+</body>
+</html>
